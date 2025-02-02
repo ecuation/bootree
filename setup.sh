@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the repository URLs
-BOTS_REPO="git@github.com:ecuation/bootree-users.git"
+BOTS_REPO="git@github.com:ecuation/bootree-bots.git"
 INFRA_REPO="git@github.com:ecuation/bootree-infra.git"
 USERS_REPO="git@github.com:ecuation/bootree-users.git"
 
