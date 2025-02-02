@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# Except these files and directories
+!skaffold.yaml
+
+# Ignore everything inside these directories
+*/*
+
+# Allow skaffold.yaml
+!skaffold.yaml
+!setup.sh
+!.gitignore
