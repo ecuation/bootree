@@ -1,4 +1,8 @@
-# Bootree Skaffold Project
+# Bootree Skaffold (Kubernetes) Project
+
+Bootree is a personal project which includes a users management/authorization microservice and a bot/assistant microservices with a Twitch API and OpenAI API integration.
+
+Basically is a WIP like "alexa assistant" project to moderate a Twitch channel chat.
 
 This project uses Skaffold to manage the development and deployment of the Bootree microservices, including `bootree-users` and `bootree-bots`.
 
@@ -42,8 +46,15 @@ Skaffold is a command-line tool that facilitates continuous development for Kube
     cd ../bots
     npm install
     ```
+5. Update hosts file for local Development by adding:
 
-5. Set up environment variables for each microservice by creating a `.env` file in the root directory of each microservice, there is a `.env.example` for each microservice with the necessary environment vars.
+    ```127.0.0.1 bootree.test```
+
+6. Set up environment variables for each microservice by creating an skaffold.env file inside k8s folder and run the following command. Is not necessary to create any .env inside each microservice.
+
+    ```sh
+    kubectl create configmap bots-config --from-env-file=skaffold.env
+    ```
 
 ## Usage
 
@@ -62,7 +73,7 @@ Skaffold is a command-line tool that facilitates continuous development for Kube
 - [bots](http://_vscodecontentref_/2): Contains the `bootree-bots` microservice.
 - [skaffold.yaml](http://_vscodecontentref_/3): Skaffold configuration file.
 
-## API Endpoints
+## API documentation (Swagger)
 
 ### bootree-users
 
