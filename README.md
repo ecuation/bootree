@@ -82,3 +82,8 @@ There is swagger documentation for users microservice [here](http://bootree.test
 ### bootree-bots
 
 There is swagger documentation for bots microservice [here](http://bootree.test/api/bot/api-docs)
+
+
+## Diagrams
+
+Architecture and API Figma diagrams [here](https://www.figma.com/deck/kClBxJfOraS0cWa2JjpLCS/Building-a-scalable-microservices-architecture-presentation?node-id=1-1053&t=EVK31kJ8Xx8vq604-1)
