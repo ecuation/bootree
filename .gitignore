@@ -3,11 +3,10 @@
 
 # Except these files and directories
 !skaffold.yaml
+!setup.sh
+!.gitignore
+!README.md
 
 # Ignore everything inside these directories
 */*
 
-# Allow skaffold.yaml
-!skaffold.yaml
-!setup.sh
-!.gitignore
