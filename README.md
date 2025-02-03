@@ -17,6 +17,11 @@ Skaffold is a command-line tool that facilitates continuous development for Kube
 - [Skaffold](https://skaffold.dev/docs/install/)
 - [Nginx ingress controller](https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/)
 
+
+There is a common NPM package created for these microservices that is included on each package.json. The common organization package contains some shared code necessary to manage Error handling and authorization middlewares.
+
+You can access them by the following if needed [link](https://www.npmjs.com/package/@bootree/common).
+
 ## Installation
 
 1. Clone the repositories:
@@ -55,10 +60,18 @@ Skaffold is a command-line tool that facilitates continuous development for Kube
     ```sh
     kubectl create configmap bots-config --from-env-file=skaffold.env
     ```
+## Tests
+
+All endpoints has tests for happy paths and unhappy paths, you can run tests by the following command on each microservice. (Do not forget to first install node dependencies).
+
+1. Inside users and bots projects
+    ```sh
+    npm run test
+    ```
 
 ## Usage
 
-1. Start Skaffold:
+1. Start Skaffold in the root folder:
 
     ```sh
     skaffold dev
